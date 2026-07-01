@@ -1,0 +1,36 @@
+{
+  "version": 4,
+  "routes": {
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "eb2aaa70aa89fdc8b5247fc011aff9d5",
+    "previewModeSigningKey": "15efd1b8aab2ba5e8d244be9d5653715347299c22c8c85b6b9882d655ff5e965",
+    "previewModeEncryptionKey": "7b40299e30d32db59c1dfbca3b752840b9c8802de7d2bf4ad5fe6e4b67faaa2e"
+  }
+}
